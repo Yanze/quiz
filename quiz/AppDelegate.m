@@ -22,14 +22,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    // set quizViewController as root view controller
-    quizViewController *quizVC = [[quizViewController alloc] init];
-    self.window.rootViewController = quizVC;
 
-    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    self.window.rootViewController= [[UIViewController alloc]init];
+//    self.window.rootViewController= [[UIViewController alloc]init];
+    
+    // set quizViewController as root view controller
+    quizViewController *quizVC = [[quizViewController alloc]init];
+    self.window.rootViewController = quizVC;
     return YES;
 }
 
